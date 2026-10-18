@@ -1,0 +1,24 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "JianProject.CysTerra.Features/0.1.4.2": {
+        "runtime": {
+          "JianProject.CysTerra.Features.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JianProject.CysTerra.Features/0.1.4.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
