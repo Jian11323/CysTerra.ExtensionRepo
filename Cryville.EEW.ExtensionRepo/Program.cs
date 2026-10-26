@@ -26,6 +26,7 @@ namespace Cryville.EEW.ExtensionRepo {
 		};
 		static readonly Resolver _resolver = new();
 
+		static readonly HashSet<string> _excludedDependencies = ["Cryville.EEW.Analyzer"];
 		static readonly HashSet<string> _summaryMetadataKeys = ["displayName", "description", "authors"];
 
 		static async Task Main(string[] args) {
@@ -146,6 +147,8 @@ namespace Cryville.EEW.ExtensionRepo {
 			var referencedAssemblies = extensionInfo.ReferencedAssemblies;
 			var dependencies = new DependencyInfoCollection();
 			foreach (var d in depsContext.RuntimeLibraries.Single(l => l.Name == packageName).Dependencies) {
+				if (_excludedDependencies.Contains(d.Name))
+					continue;
 				if (referencedAssemblies.SingleOrDefault(a => a.Name == d.Name) is { } referencedAssembly) {
 					dependencies.Add(new(
 						referencedAssembly.Name ?? throw new InvalidOperationException("Unexpected reference to an unnamed assembly."),
