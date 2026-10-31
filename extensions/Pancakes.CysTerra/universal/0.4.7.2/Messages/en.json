@@ -1,0 +1,19 @@
+{
+	"Culture": "en",
+	"Strings": {
+		"$ExtensionDesc": "Core component that receives and processes PancakesAPI alerts.",
+		"$ExtensionName": "PancakesAPI source",
+		"AuthorityName": "GlobalQuake",
+		"ComponentName": "PancakesAPI (GlobalQuake)",
+		"PropertyDepth": "Depth",
+		"PropertyDepthValue": "{0}km",
+		"PropertyMaxIntensity": "Max intensity",
+		"PropertyMagnitude": "M",
+		"PropertySerial": "Serial",
+		"SourceName": "PancakesAPI",
+		"Title": "Earthquake early warning",
+		"TitleCancel": "Cancellation",
+		"TitleUpdate": "Earthquake early warning update",
+		"TitleFinal": "Final report"
+	}
+}
